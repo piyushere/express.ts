@@ -1,13 +1,13 @@
 {
-  "name": "express",
+  "name": "express-ts",
   "version": "1.0.0",
-  "description": "",
+  "description": "Express.JS boilorplate with typescript, eslint and prettier",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "piyushere",
   "license": "ISC",
   "devDependencies": {
     "@types/body-parser": "^1.19.2",
