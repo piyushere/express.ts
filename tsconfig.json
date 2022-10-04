@@ -1,26 +1,37 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "lib": ["esnext"],
+    "target": "ESNext",
+    "lib": [
+      "ESNext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "removeComments": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    // "noEmit": true,
+    //"noEmit": true,
     "esModuleInterop": true,
-    "module": "commonjs",
+    "module": "ESNext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "incremental": true,
     "baseUrl": ".",
+    "outDir": "./dist"
   },
-  "include": ["**/*.ts"],
-  "exclude": ["node_modules"],
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
   "paths": {
-    "src/*": [
+    "src/*": [ // sadly this doesn't work in raw nodejs project without some hacks
       "src/*"
     ]
+  },
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
   }
 }

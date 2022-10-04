@@ -1,8 +1,10 @@
+/** @type {import("eslint").Linter.Config} */
 module.exports = {
   env: {
-    commonjs: true,
-    es2021: true,
+    node: true,
+    es2022: true,
   },
+
   extends: ['airbnb-base', 'plugin:prettier/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -16,9 +18,7 @@ module.exports = {
       'ignorePackages',
       {
         js: 'never',
-        jsx: 'never',
         ts: 'never',
-        tsx: 'never',
       },
     ],
     'import/no-extraneous-dependencies': 'off',
@@ -26,5 +26,10 @@ module.exports = {
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': 'warn',
     'no-use-before-define': 'off',
+  },
+  settings: {
+    'import/resolver': {
+      typescript: true, // this loads <rootdir>/tsconfig.json to eslint
+    },
   },
 };
