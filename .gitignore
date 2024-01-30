@@ -37,3 +37,5 @@ IDE - VSCode
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+/scratch

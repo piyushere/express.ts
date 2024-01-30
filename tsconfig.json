@@ -15,12 +15,12 @@
     "isolatedModules": true,
     "incremental": true,
     "baseUrl": ".",
+    "paths": {
+      "src/*": [
+        "src/*"
+      ]
+    }
   },
   "include": ["**/*.ts"],
   "exclude": ["node_modules"],
-  "paths": {
-    "src/*": [
-      "src/*"
-    ]
-  }
 }
