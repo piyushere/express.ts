@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "lib": ["esnext"],
+    "lib": ["ESNext"],
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "allowJs": true,
     "skipLibCheck": true,
     "removeComments": true,
@@ -9,11 +11,11 @@
     "forceConsistentCasingInFileNames": true,
     // "noEmit": true,
     "esModuleInterop": true,
-    "module": "commonjs",
-    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "incremental": true,
+    "verbatimModuleSyntax": true,
+    "noUncheckedIndexedAccess": true,
     "baseUrl": ".",
     "paths": {
       "src/*": [
